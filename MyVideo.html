@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head><title>index</title></head>
+<style>
+body {
+  background-image: url('awan.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+</body>
+
+<h1 style="font-size:50px; text-align:center;">MY VIDEO</h1>
+
+<p style="font-size:20px; text-align:center; line-height:30px; margin-bottom:50px;"> Video belows<br> are about me and my best friends's lives<br> in our current university
+
+<div style="text-align:center"> 
+  <button onclick="PlayPause()">Play/Pause</button> 
+  <button onclick="MakeBig()">Big</button>
+  <button onclick="MakeSmall()">Small</button>
+  <button onclick="MakeNormal()">Normal</button>
+  <br><br>
+  <video id="univideo" width="420">
+    <source src="univideo.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+
+<script> 
+var myVideo = document.getElementById("univideo"); 
+
+function PlayPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function MakeBig() { 
+    myVideo.width = 900; 
+} 
+
+function MakeSmall() { 
+    myVideo.width = 420; 
+} 
+
+function MakeNormal() { 
+    myVideo.width = 620; 
+}
+
+</script> 
+
+
+<br><br><br><br><br><br>
+
+
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="mallvideo" width="420">
+    <source src="mallvideo.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var mallVideo = document.getElementById("mallvideo"); 
+
+function playPause() { 
+  if (mallVideo.paused) 
+    mallVideo.play(); 
+  else 
+    mallVideo.pause(); 
+} 
+
+function makeBig() { 
+    mallVideo.width = 900; 
+} 
+
+function makeSmall() { 
+    mallVideo.width = 420; 
+} 
+
+function makeNormal() { 
+    mallVideo.width = 620; 
+} 
+</script> 
+
+<p>
+<h1 style=text-align:center;><a href="#top">Back to the Top</a></p></h1>
+
+</body>
+</html>
